@@ -1,4 +1,18 @@
-    <!DOCTYPE html >
+<?php
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=bd_projet_orange;charset=utf8', 'root', '',
+        array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
+}
+catch(Exception $e)
+{
+die('Erreur : '.$e->getMessage());
+}
+?>
+
+
+
+<!DOCTYPE html >
 <html lang="fr">
 <head>
   <title>WEBDE Lyon</title>
