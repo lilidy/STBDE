@@ -110,7 +110,7 @@
                         <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-youtube"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-linkdin"></i></a>
+                        <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-linkedin"></i></a>
                     </li>
                 </ul>
             </div>

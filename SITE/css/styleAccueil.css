@@ -1,3 +1,13 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+nav{
+    display: block;
+}
+
 .blocPresentation{
     height: 400px;
     width: 100%;
@@ -58,7 +68,7 @@
 
 .filActu{
     width: 900px;
-    height: 1500px;
+    height: auto;
     background-color: white;
     margin: auto;
     margin-top: 100px;

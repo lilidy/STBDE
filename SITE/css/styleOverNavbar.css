@@ -1,6 +1,13 @@
+.c{
+    width: 100%;
+    height: 100px;
+    background-color: ;
+}
+
 .overbar{
     margin-top: 10px;
     float: right;
+    background-color: ;
 }
 
 .overbar li{
