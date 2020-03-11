@@ -1,0 +1,356 @@
+ body {
+  /*background-image: url(licorne-dab.png);*/
+  margin: 0;
+  padding: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.container-fluid{
+  padding: 0;
+}
+
+.centreur{
+margin: auto;
+wi
+
+}
+
+/* header */
+.header{
+  opacity: 0.2;
+  background-color: white;
+  height: 70px;
+  line-height: 70px;
+}
+
+.menu{
+  float: right;
+}
+
+.menu a{
+  color: blue;
+  margin-right: 20px;
+}
+
+.menu a:hover{
+  color: black;
+
+}
+/* text */
+
+.textePartenaire{
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.texteReseau{
+  top: 75%;
+  width: 100%;
+  text-align: center;
+}
+
+/*image */
+
+
+#sopra{
+  width: 300px;
+  max-width: 300px;
+}
+
+#spie{
+  width: 150px;
+  max-width: 150px;
+}
+
+
+/* header Equipe */
+
+/* text Equipe */
+
+h5{
+  color: red;
+}
+
+/* image Equipe */
+
+#imagePresident{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageVicePresident{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageRespEvenement{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageTresorier{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageSecretaire{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageRespCommunication{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageCommunication{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageRespPartenariat{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+#imageRespGaming{
+  width: 100px;
+  max-width: 100;
+  border-radius: 3rem;
+}
+
+
+/* Bouton president */
+
+.centreur{
+  margin: auto;
+  padding: auto;
+  width: 500px;
+  margin-top: 200px;
+}
+
+.custom-select{
+  top: 100%;
+  width: 400px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.custom-select:active{
+
+    margin-bottom: 200px;
+
+}
+
+
+
+
+
+/*
+
+#buttonConnexion{
+  background-color: white;
+  border: none;
+  color: #4F7089;
+  cursor: pointer;
+  padding: 0em 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  transition: 0.2s;
+
+  position: absolute;
+  top: 100px;
+  right: 50px;
+}
+
+#buttonInscription{
+  background-color: white;
+  border: none;
+  color: #4F7089;
+  cursor: pointer;
+  padding: 0rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2rem;
+  outline: none;
+  transition: 0.2s;
+
+  position: absolute;
+  top: 100px;
+  right: 200px;
+}
+
+#buttonConnexion:hover{
+  transform: scale(1.09);
+}
+
+#buttonInscription:hover{
+  transform: scale(1.09);
+}
+
+#buttonConnexion:active{
+  transform: scale(0.98);
+}
+
+#buttonInscription:active{
+  transform: scale(0.98);
+}
+
+#partenaire{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  width: 25%;
+  height: 20%;
+  color: white;
+  background-color: grey;
+  margin-left: 40%;
+  margin-top: 20%;
+
+}
+
+#imageSopra{
+  width: 250px;
+  display: inline-block;
+
+
+  position: absolute;
+  top: 400px;
+  left: 175px;
+
+}
+
+#texteSopra{
+color: white;
+display: inline-block;
+
+  position: absolute;
+  top: 560px;
+  left: 100px;
+
+}
+
+#imageSpie{
+  width: 150px;
+  display: inline-block;
+
+  position: absolute;
+  top: 400px;
+  right: 250px;
+
+}
+
+#texteSpie{
+color: white;
+display: inline-block;
+
+  position: absolute;
+  top: 560px;
+  right: 100px;
+
+}
+
+.conteneur{
+  display: flex;
+  flex-direction: row;
+
+}
+
+#reseau{
+  color: white;
+  display: inline-block;
+
+  position: absolute;
+  top: 800px;
+  left: 500px;
+
+}
+
+#imageLicorne1{
+  width: 50px;
+  display: inline-block;
+
+  position: absolute;
+  top: 1000px;
+  left: 175px;
+
+}
+
+#imageLicorne2{
+  width: 50px;
+  display: inline-block;
+
+  position: absolute;
+  top: 1000px;
+  right: 175px;
+
+}
+
+#imageEtoile1{
+  width: 50px;
+  display: inline-block;
+
+  position: absolute;
+  top: 700px;
+  left: 675px;
+
+}
+
+#imageEtoile2{
+  width: 50px;
+  display: inline-block;
+
+  position: absolute;
+  top: 1500px;
+  left: 675px;
+
+}
+
+#equipe{
+  color: white;
+  display: inline-block;
+
+  position: absolute;
+  top: 200px;
+  left: 600px;
+
+}
+
+#imagePresident{
+  width: 100px;
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 200px;
+  left: 100px;
+
+}
+
+#imageVice_president{
+  width: 100px;
+  border-radius: 3rem;
+
+  position: absolute;
+  top: 200px;
+  left: 300px;
+
+}

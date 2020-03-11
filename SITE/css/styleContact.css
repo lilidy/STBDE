@@ -1,0 +1,111 @@
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+#bloc1_contact
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+}
+#mailbde{
+    color: dodgerblue;
+    text-decoration: none;
+}
+.formulaire{
+    font-family: 'Open Sans', sans-serif;
+    margin: auto;
+    padding: 50px;
+    height: 500px;
+    width: 400px;
+    background-color: #eeeeee;
+    margin-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+    
+}
+.bloctext{
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin: auto;
+    padding: 50px;
+    height: 500px;
+    width: 400px;
+    background-color: #eeeeee;
+    margin-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 100px;
+}
+
+.formulaire>.container-fluid>h4 {
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+h4{
+    margin-bottom: 35px;
+}
+
+::placeholder{
+    padding-left: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+}
+
+#bloc{
+    margin-bottom: 10px;
+}
+
+
+textarea.submit 
+{
+    resize:none;    
+}
+#entered{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#enteredMess{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+    padding-left: 10px; 
+}
+
+
+.submit{
+    border: 1px solid rgba(255, 255, 255, 0.496);
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    margin-left: 110px;
+}
+#champtextcontact{
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+#imgcontact{
+    margin-top: 30px;
+    width: 300px;
+    height: 150px;
+}
+#bloctextaccueil
+{
+    background-color: rgb(255, 255, 255);
+}
+
+
+element.style {
+    height: 150px;
+    width: 400px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border: 0px;
+}

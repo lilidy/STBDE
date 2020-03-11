@@ -1,0 +1,189 @@
+body{
+    background-image: url(img/licorne-dab.png);
+}
+
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{ 
+    background-image: url(../img/logo.png);
+    border-radius: 100px 100px 100px 100px;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+}
+.formulaire{
+    margin: auto;
+    padding: 50px;
+    height: 780px;
+    width: 500px;
+    background-color: #c0c0c0;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+.formulaire > .container-fluid > h4{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.formulaireInscription{
+    margin: auto;
+    padding: 50px;
+    height:auto;
+    width: 500px;
+    background-color: #c0c0c0;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+
+.formulaireInscription > .container-fluid > h4{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.formulaireConnexion{
+    
+    margin: auto;
+    padding: 50px;
+    height: 480px;
+    width: 500px;
+    background-color: #c0c0c0;
+    margin-top: 100px;
+    padding-top: 30px;
+}
+
+.formulaireConnexion > .container-fluid > h4{
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+.form-control:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #F4D03F;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(244, 208, 63, 0.25);
+}
+
+
+
+
+
+footer{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: #eeeeee;
+    margin-top: 100px;
+    }
+#partie_rzo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.icone {
+    opacity: 0.6;
+    margin: 15px;
+  }
+
+.icone:hover  {
+    opacity: 1;
+}
+
+
+#insta{
+    padding-left: 35px;
+}
+
+#yt{
+    padding-left: 40px;
+}
+#auteurs{
+    margin-top: 8px;
+    margin-bottom: 3px;
+    font-family: 'Open Sans', sans-serif;
+    color:#ced4da;
+}
+.idrissa {
+    color:rgb(0, 0, 121);
+    text-decoration: none;
+}
+.idrissa:hover {
+    color: #11cdef; 
+    text-decoration: underline;
+}
+
+#Copyright{
+    margin-top: 10px;
+    font-size: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.space{
+    margin-right: 50px;
+}
+
+.center{    
+    margin-left: 500px;
+}
+#navbarSupportedContent{
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 20%;
+    
+}
+#connectionbtn{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.centered{
+    display: block;
+    text-align: center;
+    margin-top: 10vh;
+}
+#bloctextaccueil
+{
+    margin-top: 10vh;
+    text-align:justify;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+#presWEBDE
+{
+    width: 35%; 
+    height: 20%;
+    margin: auto; 
+    border: 1px solid rgb(238, 237, 237);
+    text-align: justify;
+    padding: 12px;  
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+#epsilogo{
+    width: 150px;
+    margin: 10vh;
+}
+#wislogo{
+    width: 110px;
+    margin: 10vh;
+}
+#inscon
+{
+    background-color: #ffffff;
+     padding-left: 80%; 
+    padding-top: 5vh;
+    padding-bottom: 5vh;  
+}

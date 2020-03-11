@@ -1,0 +1,13 @@
+.container-fluid{
+    padding: 0px;
+    margin: 0px;
+}
+
+.logo{
+    
+    background-image: url(logo.png);
+    border-radius: 100px 100px 100px 100px;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,38 @@
+#bloctextaccueil {
+    margin-top: 10vh;
+    text-align: justify;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+}
+
+#presWEBDE {
+    width: 50%;
+    height: auto;
+    margin: auto;
+    border-radius: 0.5vh;
+    text-align: center;
+
+    padding: 30px;
+    /*margin-left: 20vh;
+    margin-right: 20vh;*/
+    background-color: rgb(190, 190, 190);
+}
+
+#epsilogo {
+    width: 150px;
+    /* margin: 10vh; */
+    margin-top: 10vh;
+    margin-right: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 15vh;
+}
+
+#wislogo {
+    width: 110px;
+    /* margin: 10vh; */
+    margin-top: 10vh;
+    margin-right: 15vh;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+}

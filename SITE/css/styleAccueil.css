@@ -1,0 +1,107 @@
+.blocPresentation{
+    height: 400px;
+    width: 100%;
+    margin-top: 80px;
+   box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    padding: 50px;
+}
+
+#inscon
+{
+    background-color: #ffffff;
+     padding-left: 80%; 
+    padding-top: 5vh;
+    padding-bottom: 5vh;  
+}
+
+.profil{
+    float: right;
+    margin-right: 150px;
+    margin-top: 20px;
+    text-align: center;
+    width: 200px;
+}
+
+
+.image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px 100px 100px 100px;
+    background-color: #eeeeee;
+    margin: auto;
+    
+}
+
+.image:hover{
+    background-color: #eeeeff;
+}
+
+
+.presentation{
+    width: 800px;
+    height: 300px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    margin-left: 10px;
+    font-size: 15px;
+    
+}
+
+.logoEPSI_WIS{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+}
+
+.filActu{
+    width: 900px;
+    height: 1500px;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.post{
+    width: 100%;
+}
+
+.headerPost{
+    width: 100%;
+    padding-top: 10px;
+    height: 250px;
+    background-color: beige;
+}
+
+.logos{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50px 50px 50px 50px;
+    margin: 10px;
+    background-image: url("../img/logo50x50.jpg");
+}
+
+.texte{
+    margin-left: 10px;
+}
+
+
+.description{
+    
+    margin: 10px;
+
+}
+
+.contenuPost{
+    
+    background-color: aquamarine;
+    width: 100%;
+    height: 500px;
+    
+}
+

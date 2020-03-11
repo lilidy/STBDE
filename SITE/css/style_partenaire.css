@@ -1,0 +1,23 @@
+body {
+ /*background-image: url(licorne-dab.png);*/
+ margin: 0;
+ padding: 0;
+}
+
+
+.textePartenaire{
+  top: 10%;
+  width: 100%;
+  text-align: center;
+}
+
+.centreur{
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+
+}
+.card{
+  display: inline-block;
+  position: absolute;
+}
