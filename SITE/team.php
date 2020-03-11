@@ -339,40 +339,10 @@
     </section>
 
 
-    <footer>
-        <br />
-        <div>
-            <strong>WEBDE</strong>
-        </div>
-        <div id="partie_rzo">
-            <ul class="list-inline dev-icons">
-                <li class="list-inline-item">
-                    <a href="https://fr-fr.facebook.com/bdeepswisilyon"><i class="fab fa-facebook"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.instagram.com/bdeepsiwislyon/"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-youtube"></i></a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-linkdin"></i></a>
-                </li>
-            </ul>
-        </div>
-        <div id="auteurs">
-            <a href="https://www.linkedin.com/in/idrissa-ndiaye-9a2455179/" class="idrissa" target="_blank"> Idrissa NDIAYE </a>
-            &
-            <a href="https://www.linkedin.com/in/jean-emmanuel-kouakou-668401173/" class="idrissa" target="_blank"> Emmanuel KOUAKOU </a>
-            &
-            <a href="https://www.linkedin.com/in/simon-pijard-ba6a40196/" class="idrissa" target="_blank"> Simon PIJARD</a>
-        </div>
-        <div id="Copyright">
-            Copyright &copy; 2020 . Tous droits réservés.
-        </div>
-        <br />
-
-    </footer>
+  <?php
+    
+        include 'footer.html';
+        ?>
 
     <!-- Team -->
 </body>
