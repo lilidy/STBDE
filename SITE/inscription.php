@@ -54,7 +54,8 @@ if (isset($_POST['inscription'])) {
                                         if (!empty($niveauEPSI))
                                         {
                                             $niveau = $niveauEPSI;
-                                        }else if(!empty($niveauWIS))
+                                        }
+                                        if(!empty($niveauWIS))
                                         {
                                             $niveau = $niveauWIS;
                                         }

@@ -151,12 +151,12 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 -- Déchargement des données de la table `utilisateur`
 --
 
-INSERT INTO `utilisateur` (`IdUser`, `Prenom`, `Nom`, `Password`, `Mail`, `Niveau`) VALUES
-(17, 'Idrissa', 'NDIAYE', '$2y$10$Zc0at.J4RcknJY4kEG4o3OfM8nM5y3i/OPWLWXnqfVx69RJ48DL4e', 'idrissa.ndiaye00@epsi.fr', 'B3'),
-(18, 'Idrissa', 'NDIAYE', '$2y$10$Fjs49A0apwv5Ywexy0t0de9Makw1.xoTqzxKNnUupwd4sdShfjnQ.', 'idrissa.ndiaye@epsi.fr', 'I1'),
-(19, 'Idrissa', 'NDIAYE', '$2y$10$2Le5L1h7k7Buq3Zrpi7A8ucCoC8GoxjcqWFaXFsI59rIDfOL09mgS', 'idrissa.ndiaye15@epsi.fr', 'B1'),
-(20, 'Idrissa', 'NDIAYE', '$2y$10$j7xMATw51.tjI7w3fn9WJeHA8Yn3pXQCdnRl6zkhyS/65IT657pA.', 'idrissa.ndiaye152@epsi.fr', 'B1'),
-(21, 'Idrissa', 'NDIAYE', '$2y$10$xZ8LuoMWMoempA.kMm70zuf8LbyIY3D8Z.V/mWLZ1lbZKGw90u3LO', 'idrissa.ndiayeun@epsi.fr', 'B3');
+--INSERT INTO `utilisateur` (`IdUser`, `Prenom`, `Nom`, `Password`, `Mail`, `Niveau`) VALUES
+--(17, 'Idrissa', 'NDIAYE', '$2y$10$Zc0at.J4RcknJY4kEG4o3OfM8nM5y3i/OPWLWXnqfVx69RJ48DL4e', 'idrissa.ndiaye00@epsi.fr', 'B3'),
+--(18, 'Idrissa', 'NDIAYE', '$2y$10$Fjs49A0apwv5Ywexy0t0de9Makw1.xoTqzxKNnUupwd4sdShfjnQ.', 'idrissa.ndiaye@epsi.fr', 'I1'),
+--(19, 'Idrissa', 'NDIAYE', '$2y$10$2Le5L1h7k7Buq3Zrpi7A8ucCoC8GoxjcqWFaXFsI59rIDfOL09mgS', 'idrissa.ndiaye15@epsi.fr', 'B1'),
+--(20, 'Idrissa', 'NDIAYE', '$2y$10$j7xMATw51.tjI7w3fn9WJeHA8Yn3pXQCdnRl6zkhyS/65IT657pA.', 'idrissa.ndiaye152@epsi.fr', 'B1'),
+--(21, 'Idrissa', 'NDIAYE', '$2y$10$xZ8LuoMWMoempA.kMm70zuf8LbyIY3D8Z.V/mWLZ1lbZKGw90u3LO', 'idrissa.ndiayeun@epsi.fr', 'B3');
 
 --
 -- Contraintes pour les tables déchargées
