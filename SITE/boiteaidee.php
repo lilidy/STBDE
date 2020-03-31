@@ -26,22 +26,13 @@
 
     <?php
     
-        include 'overNavbarBde.html';
-        
-        include 'navbarUserConnecte.html';
+
+        include 'navbar.html';
         
         ?>
-    <!-- <div class=".container-fluid" style="background-color: rgb(218, 218, 218);  display: flex; margin-top: 30vh;">
-    
-    <textarea placeholder="Votre idée / retour..." name="" id="" cols="30" rows="10" style="width: 80%;  padding: 10px; background-color: cadetblue; margin: 3%;"></textarea> 
-    
-    <div>
-          <button type="button" class="btn btn-success" style="margin-top: 15vh;">Envoyer</button>
-      </div>
 
-  </div> -->
 
-    <div style="display: flex;align-items: center;justify-content: center;margin-bottom: 5vh;padding: 0;">
+    <div style="display: flex;align-items: center;justify-content: center;margin-bottom: 5vh; margin-top: 5vh; padding: 0;">
         <ul class="nav nav-pills" id="pills-tab" role="tablist">
             <li class="nav-item">
                 <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true" style="background-color: rgb(202, 202, 202); margin-right: 1vh; ">Idée</a>

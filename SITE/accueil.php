@@ -24,7 +24,7 @@
     
     ?>
 
-    <title>NavBar</title>
+    <title>Accueil</title>
 </head>
 
 <body>
@@ -32,28 +32,14 @@
     <div class="container-fluid" style="padding:0">
 
         <?php
-    
-        include 'overNavbarBde.html';
-        
-        include 'navbarUserConnecte.html';
-        
+        include 'overNavbar.html';
+
+        include 'navbar.html';
+
+        include 'barrePresentation.html';
         ?>
 
-        <div id="bloctextaccueil">
 
-            <p id="presWEBDE">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                id est laborum.</p>
-            <div>
-                <img src="img\epsi.png" alt="EPSI" id="epsilogo">
-                <img src="img\wis.png" alt="WIS" id="wislogo">
-            </div>
-        </div>
 
         <div style="display: block;
     text-align: center;
@@ -93,41 +79,11 @@
         
         
         
-        <footer>
-            <br />
-            <div>
-                <strong>WEBDE</strong>
-            </div>
-            <div id="partie_rzo">
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item">
-                        <a href="https://fr-fr.facebook.com/bdeepswisilyon"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.instagram.com/bdeepsiwislyon/"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-youtube"></i></a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="https://www.youtube.com/watch?v=ulERa8BcNhk&t=2s"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div id="auteurs">
-                <a href="https://www.linkedin.com/in/idrissa-ndiaye-9a2455179/" class="idrissa" target="_blank"> Idrissa NDIAYE </a>
-                &
-                <a href="https://www.linkedin.com/in/jean-emmanuel-kouakou-668401173/" class="idrissa" target="_blank"> Emmanuel KOUAKOU </a>
-                &
-                <a href="https://www.linkedin.com/in/simon-pijard-ba6a40196/" class="idrissa" target="_blank"> Simon PIJARD</a>
-            </div>
-            <div id="Copyright">
-                Copyright &copy; 2020 . Tous droits réservés.
-            </div>
-            <br />
+        <?php
 
-        </footer>
+        include 'footer.html';
 
+        ?>
 
     </div>
     <!-- Optional JavaScript -->

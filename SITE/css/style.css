@@ -5,6 +5,7 @@ body{
 .container-fluid{
     padding: 0px;
     margin: 0px;
+    height: auto;
 }
 
 .logo{ 
@@ -52,7 +53,7 @@ body{
     
     margin: auto;
     padding: 50px;
-    height: 480px;
+    height: auto;
     width: 500px;
     background-color: #c0c0c0;
     margin-top: 100px;
