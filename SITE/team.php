@@ -1,4 +1,7 @@
-<head>
+<?php
+session_start();
+?>
+    <head>
 
     <link rel="stylesheet" href="css/style_equipe.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
@@ -27,9 +30,9 @@
 
     <?php
     
-        include 'overNavbar.html';
+        include 'overNavbar.php';
         
-        include 'navbar.html';
+        include 'navbar.php';
 
         ?>
 

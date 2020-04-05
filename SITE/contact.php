@@ -1,3 +1,8 @@
+
+<?php
+session_start();
+?>
+
 <!Doctype html>
 <html lang="fr">
 
@@ -30,9 +35,9 @@
 
 <?php
 
-include 'overNavbar.html';
+include 'overNavbar.php';
 
-include 'navbar.html';
+include 'navbar.php';
 
 ?>
 

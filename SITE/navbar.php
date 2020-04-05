@@ -1,3 +1,14 @@
+<?php
+  $connecte = 0;
+$estPresident =0;
+$estAdmin = 0;
+if(isset($_SESSION['email'])){
+    $connecte = 1;
+}
+  ?>
+
+
+
 <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
@@ -21,9 +32,16 @@
                 <li class="nav-item active">
                     <a class="nav-link space" href="partenaire.php">Partenaires <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
+                <?php
+                
+                if($connecte == 1){
+                echo'<li class="nav-item active">
                     <a class="nav-link space" href="boiteaidee.php">Boite à Idées <span class="sr-only">(current)</span></a>
-                </li>
+                </li>';
+                }
+                
+                ?>
+
                 <li class="nav-item active">
                     <a class="nav-link space" href="contact.php">Contact <span class="sr-only">(current)</span></a>
                 </li>

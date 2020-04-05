@@ -31,7 +31,7 @@ if(isset($_POST['connexion']))
                 $_SESSION['niveau']=$userdata['Niveau'];
                 $_SESSION['estadmin']=$userdata['EstAdmin'];
                 $_SESSION['estpresident']=$userdata['EstPresident'];
-                header('Location:dashboard.php');
+                header('Location:accueil.php');
             }else{
                 $erreur = "Le mot de passe n'est pas compatible";
             }
@@ -67,7 +67,7 @@ if(isset($_POST['connexion']))
 
     include 'stylesBarres.php';
 
-    include 'navbar.html'
+    include 'navbar.php'
     ?>
 </head>
 

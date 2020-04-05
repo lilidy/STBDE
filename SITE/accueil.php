@@ -3,6 +3,11 @@
 
 <html>
 
+<?php
+session_start();
+?>
+
+
 <!doctype html>
 <html lang="en">
 
@@ -17,12 +22,26 @@
     <link rel="stylesheet" href="css/styleAccueil.css">
     <link rel="stylesheet" href="css/styleOverNavbar.css">
     <link rel="stylesheet" href="css/barrePresentation_style.css">
-    
+
     <?php
     
     include 'lienIconeFooter.html';
     
     ?>
+
+    <?php
+            $servername = 'localhost';
+            $username = 'root';
+            $password = '';
+            
+            //On établit la connexion
+            $stbdeBD = new PDO("mysql:host=$servername;dbname=basebde", $username, $password);
+
+    
+    
+    $POST = $stbdeBD->query('SELECT * FROM post');
+        ?>
+
 
     <title>Accueil</title>
 </head>
@@ -32,35 +51,34 @@
     <div class="container-fluid" style="padding:0">
 
         <?php
-        include 'overNavbar.html';
+        include 'overNavbar.php';
 
-        include 'navbar.html';
+        include 'navbar.php';
 
-        include 'barrePresentation.html';
+        include 'barrePresentation.php';
         ?>
 
 
 
-        <div style="display: block;
+    <div style="display: block;
     text-align: center;
     margin-top: 10vh">
-            <iframe width="900" height="500" src="https://www.youtube.com/embed/ulERa8BcNhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        <iframe width="900" height="500" src="https://www.youtube.com/embed/ulERa8BcNhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 
-        <div class="filActu">
-            <h6 style="text-align: center">Fil d'actualité</h6>
+    <div class="filActu">
+        <h6 style="text-align: center">Fil d'actualité</h6>
 
-            <?php
+        <?php
                 
-            for($i=0;$i<10;$i++){
-                
-                
+            while($donnees = $POST->fetch() ){
+                                
                 echo '<div class="post">
                 <div class="headerPost">
                     <div class="logos"></div>
                     <div class="texte"><b>WEBDE</b></div>
-                    <div class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur quaerat vel, cupiditate ipsam autem tempora repellendus tempore quis rerum id sequi, tenetur minus suscipit aut deserunt, alias odio molestiae. Iusto! Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore mollitia excepturi nulla expedita laborum cupiditate fugit aspernatur asperiores, qui fuga.</div>
+                    <div class="description">'.$donnees['Description'].'</div>
 
                 </div>
 
@@ -71,15 +89,14 @@
             </div>';
                 
             }
-            
             ?>
 
 
-        </div>
-        
-        
-        
-        <?php
+    </div>
+
+
+
+    <?php
 
         include 'footer.html';
 
@@ -91,6 +108,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
+    </body>
 
 </html>
