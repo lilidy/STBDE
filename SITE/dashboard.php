@@ -20,6 +20,17 @@ if(!isset($_SESSION['email'])){
 
 <h1>Dashboard</h1>
 
+<?php
+echo $_SESSION['nom'];
+echo '<br>';
+echo 'Le estadmin : ';
+echo $_SESSION['estadmin'];
+echo '<br>';
+echo 'Le estpresident : ';
+echo $_SESSION['estpresident'];
+
+?>
+
 <a href="deconnection.php">Déconnexion</a>
 
 </body>

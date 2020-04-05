@@ -1,8 +1,3 @@
-
-
-
-
-
 <?php
 
 require 'bdd.php';
@@ -48,36 +43,57 @@ if (isset($_POST['inscription'])) {
                                         // Tout est bon : on insert l'utilisateur dans la bdd :
                                         //$req_inser = $bdd -> prepare("INSERT INTO utilisateur(idUser,Prenom, Nom, Mail, Password, Niveau) VALUES(NULL , '?', '?', '?', '?', '?')");
                                         //$password = password_hash("$mdp1" , PASSWORD_BCRYPT);
-                                        $req = $bdd->prepare('INSERT INTO utilisateur(idUser,Prenom, Nom, Mail, Password, Niveau) VALUES(:IdUser ,:prenom,:nom,:email,:password,:niveau)');
+                                        $req = $bdd->prepare('INSERT INTO utilisateur(idUser,Prenom, Nom, Mail, Password, Niveau, EstAdmin, EstPresident) VALUES(:IdUser ,:prenom,:nom,:email,:password,:niveau,:estadmin, :estpresident)');
 
-                                        $niveau = '';
-                                        if (!empty($niveauEPSI))
-                                        {
-                                            $niveau = $niveauEPSI;
-                                        }
-                                        if(!empty($niveauWIS))
-                                        {
-                                            $niveau = $niveauWIS;
-                                        }
+                                        //var_dump($niveauEPSI);
+                                        //var_dump($niveauWIS);
 
 
+                                        if ($niveauEPSI != 'null' && !empty($niveauEPSI)){
                                         $req->execute(array(
                                             'IdUser' => null,
                                             'prenom'=> $prenom,
                                             'nom'=> $nom,
                                             'email'=> $email,
                                             'password'=> $PasswordHashed,
-                                            'niveau'=> $niveau
+                                            'niveau'=> $niveauEPSI,
+                                            'estadmin' => 0,
+                                            'estpresident'=> 0
                                         ));
 
 
+                                            $success = 'Insription réussie !';
+
+                                            sleep(2);
+                                            //die('success');
+                                            header('Location:connexion.php');
+
+                                        } elseif ($niveauWIS != 'null' && !empty($niveauWIS)) {
+                                            $req->execute(array(
+                                                'IdUser' => null,
+                                                'prenom' => $prenom,
+                                                'nom' => $nom,
+                                                'email' => $email,
+                                                'password' => $PasswordHashed,
+                                                'niveau' => $niveauWIS,
+                                                'estadmin' => 0,
+                                                'estpresident' => 0
+                                            ));
 
 
-                                        $success = 'Insription réussie !';
+                                            $success = 'Insription réussie !';
 
-                                        sleep(2);
-                                        //die('success');
-                                        header('Location:connexion.php');
+                                            sleep(2);
+                                            //die('success');
+                                            header('Location:connexion.php');
+
+
+                                        }else{
+                                            $erreur = "Selectionnez un niveau !";
+
+                                        }
+
+
 
 
 
@@ -105,7 +121,7 @@ if (isset($_POST['inscription'])) {
                 $erreur = "Votre prénom ne doit pas dépasser 25 caractères";
             }
         }else {
-            $erreur = "Selectionnez un niveau et remplissez votre email";
+            $erreur = "Selectionnez bien un niveau ";
         }
     }
 
@@ -239,71 +255,71 @@ if (isset($_POST['inscription'])) {
 
 
 
-    <script>
-        function controle()
+<script>
+    function controle()
+    {
+        var mail_recup = document.getElementById("mail").value;
+        var niveau = document.getElementById("niveau");
+        if(mail_recup != null)
         {
-            var mail_recup = document.getElementById("mail").value;
-            var niveau = document.getElementById("niveau");
-            if(mail_recup != null)
-            {
-                var tab1 = mail_recup.split("@");
-                var tab2 = tab1[1].split(".");
+            var tab1 = mail_recup.split("@");
+            var tab2 = tab1[1].split(".");
 
-                if((tab2[0] != 'epsi' || tab2[0] != 'wis') && tab2[1] != 'fr' )
+            if((tab2[0] != 'epsi' || tab2[0] != 'wis') && tab2[1] != 'fr' )
+            {
+                document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
+                niveauEPSI.style.display = "none";
+                niveauWIS.style.display = "none";
+            }
+            else if((tab2[0] == 'epsi' || tab2[0] == 'wis') && tab2[1] == 'fr')
+            {
+                document.getElementById("messagebadmail").innerHTML = "";
+                if(tab2[0] == 'epsi' )
                 {
-                    document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
-                    niveauEPSI.style.display = "none";
-                    niveauWIS.style.display = "none";
-                }
-                else if((tab2[0] == 'epsi' || tab2[0] == 'wis') && tab2[1] == 'fr')
-                {
-                    document.getElementById("messagebadmail").innerHTML = "";
-                    if(tab2[0] == 'epsi' )
-                    {
                     niveauEPSI.style.display = "block";
                     niveauWIS.style.display = "none";
                     //revoir le height de formulaire    
 
-                    }
-                    else if(tab2[0] == 'wis')
-                    {
-                        niveauWIS.style.display = "block";
-                        niveauEPSI.style.display = "none";
-                    }  
                 }
-                else if(tab2[0].length > 4)
+                else if(tab2[0] == 'wis')
                 {
-                    document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
+                    niveauWIS.style.display = "block";
                     niveauEPSI.style.display = "none";
-                    niveauWIS.style.display = "none";
                 }
-
             }
-            else if(mail_recup.length == 0)
+            else if(tab2[0].length > 4)
             {
-                document.getElementById("messagebadmail").innerHTML = "Champ mail obligatoire";
+                document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
+                niveauEPSI.style.display = "none";
+                niveauWIS.style.display = "none";
             }
+
         }
+        else if(mail_recup.length == 0)
+        {
+            document.getElementById("messagebadmail").innerHTML = "Champ mail obligatoire";
+        }
+    }
 
 
 
 
-        // function controle(){
+    // function controle(){
 
-        //     var mailregex = new RegExp(/^\w+([\.-]?\w+)*@(epsi|wis){1}[.]fr$/); //regex mail avec nom de domaine epsi.fr
-        //      var mail_recup = document.getElementById("mail").value;
-        //     console.log(mail.mail_recup);
-             
-        //      if(mail_recup != mailregex){
-        //          document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
-        //      }else{
-        //          continue;
-        //      }
-        // }
+    //     var mailregex = new RegExp(/^\w+([\.-]?\w+)*@(epsi|wis){1}[.]fr$/); //regex mail avec nom de domaine epsi.fr
+    //      var mail_recup = document.getElementById("mail").value;
+    //     console.log(mail.mail_recup);
+
+    //      if(mail_recup != mailregex){
+    //          document.getElementById("messagebadmail").innerHTML = "Mail EPSI/WIS obligatoire";
+    //      }else{
+    //          continue;
+    //      }
+    // }
 
 
-        
-    </script>
+
+</script>
 
 </body>
 <?php

@@ -1,6 +1,6 @@
 <?php
 try {
-    $bdd = new PDO('mysql: host=localhost; dbname=BaseBDE', 'root', '');
+    $bdd = new PDO('mysql:host=localhost; dbname=BaseBDe', 'root', '');
 
 }
 catch(exception $e) {

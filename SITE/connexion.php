@@ -1,6 +1,12 @@
+
+<?php
+require 'bdd.php';
+?>
+
+
 <?php
 session_start();
-require 'bdd.php';
+
 
 
 if(isset($_POST['connexion']))
@@ -23,6 +29,8 @@ if(isset($_POST['connexion']))
                 $_SESSION['nom']=$userdata['Nom'];
                 $_SESSION['email']=$email;
                 $_SESSION['niveau']=$userdata['Niveau'];
+                $_SESSION['estadmin']=$userdata['EstAdmin'];
+                $_SESSION['estpresident']=$userdata['EstPresident'];
                 header('Location:dashboard.php');
             }else{
                 $erreur = "Le mot de passe n'est pas compatible";
