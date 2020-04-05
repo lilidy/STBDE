@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  mar. 31 mars 2020 à 00:37
+-- Généré le :  Dim 05 avr. 2020 à 14:45
 -- Version du serveur :  10.4.10-MariaDB
 -- Version de PHP :  7.3.12
 
@@ -144,19 +144,20 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
   `Password` varchar(60) NOT NULL,
   `Mail` varchar(50) NOT NULL,
   `Niveau` varchar(25) NOT NULL,
+  `EstAdmin` tinyint(1) NOT NULL,
+  `EstPresident` tinyint(1) NOT NULL,
   PRIMARY KEY (`IdUser`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=86 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `utilisateur`
 --
 
---INSERT INTO `utilisateur` (`IdUser`, `Prenom`, `Nom`, `Password`, `Mail`, `Niveau`) VALUES
---(17, 'Idrissa', 'NDIAYE', '$2y$10$Zc0at.J4RcknJY4kEG4o3OfM8nM5y3i/OPWLWXnqfVx69RJ48DL4e', 'idrissa.ndiaye00@epsi.fr', 'B3'),
---(18, 'Idrissa', 'NDIAYE', '$2y$10$Fjs49A0apwv5Ywexy0t0de9Makw1.xoTqzxKNnUupwd4sdShfjnQ.', 'idrissa.ndiaye@epsi.fr', 'I1'),
---(19, 'Idrissa', 'NDIAYE', '$2y$10$2Le5L1h7k7Buq3Zrpi7A8ucCoC8GoxjcqWFaXFsI59rIDfOL09mgS', 'idrissa.ndiaye15@epsi.fr', 'B1'),
---(20, 'Idrissa', 'NDIAYE', '$2y$10$j7xMATw51.tjI7w3fn9WJeHA8Yn3pXQCdnRl6zkhyS/65IT657pA.', 'idrissa.ndiaye152@epsi.fr', 'B1'),
---(21, 'Idrissa', 'NDIAYE', '$2y$10$xZ8LuoMWMoempA.kMm70zuf8LbyIY3D8Z.V/mWLZ1lbZKGw90u3LO', 'idrissa.ndiayeun@epsi.fr', 'B3');
+INSERT INTO `utilisateur` (`IdUser`, `Prenom`, `Nom`, `Password`, `Mail`, `Niveau`, `EstAdmin`, `EstPresident`) VALUES
+(82, 'Idrissa', 'NDIAYE', '$2y$10$Tz31oL/HYPkopoufzhzmGu2NrGs6vUX7b8K.2fAWD0u21CISVv0tq', 'idrissa.ndiaye@epsi.fr', 'I2', 0, 0),
+(83, 'Idrissa', 'NDIAYE', '$2y$10$.depbmZMkhinYzVAS9IE/en.xmtedBp4V1cBIsFGSqkWhJ6cdsO5K', 'idrissa.ndiaye11@epsi.fr', 'B3', 0, 0),
+(84, 'Idrissa', 'NDIAYE', '$2y$10$AOJEyzwJ1P4WW0qXLxXI7etUNUwmyWrzrnen0WMh/t1bi9l1tRYda', 'idrissa.ndiayeun@epsi.fr', 'B2', 0, 0),
+(85, 'idi', 'xsx', '$2y$10$FfhOSKzEGXQGUe3FCb3tzOZfygmpSz26eL/LeZ/c/9Y3ebeUexls2', 'idri@wis.fr', 'WIS3', 0, 0);
 
 --
 -- Contraintes pour les tables déchargées
