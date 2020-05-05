@@ -26,7 +26,7 @@ session_start();
 </head>
 
 
-<body>
+<body style="background-image:url(img/licorne-dab.png)">
 
     <?php
     

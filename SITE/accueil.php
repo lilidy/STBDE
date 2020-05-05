@@ -46,7 +46,7 @@ session_start();
     <title>Accueil</title>
 </head>
 
-<body>
+<body style="background-image:url(img/licorne-dab.png)">
 
     <div class="container-fluid" style="padding:0">
 

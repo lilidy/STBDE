@@ -71,7 +71,7 @@ if(isset($_POST['connexion']))
     ?>
 </head>
 
-<body>
+<body style="background-image:url(img/licorne-dab.png)">
     <div class="container-fluid">
 
         <div class="formulaireConnexion">

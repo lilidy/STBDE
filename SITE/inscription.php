@@ -155,7 +155,7 @@ if (isset($_POST['inscription'])) {
 
 </head>
 
-<body>
+<body style="background-image:url(img/licorne-dab.png)">
 
 
 
